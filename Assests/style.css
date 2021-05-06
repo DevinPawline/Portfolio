@@ -13,16 +13,18 @@ li, a {
     font-size: 16px;
     color: #edf0f1;
     text-decoration: none;
+    background-color: #0088a9;
 }
 
 h1 {
     color: #edf0f1;
     margin-right: auto;
+    background-color: #0088a9;
 }
 
 /* Applied psuedo class of hover */
 h1:hover {
-    color: #0088a9;
+    color: #000000;
 }
 
 /* Dispaly flex, and justified content to flex-end */
@@ -31,13 +33,14 @@ header {
     justify-content:flex-end ;
     align-items: center;
     padding: 30px 10%;
+    background-color:#0088a9 ;
 }
 
 h2 {
     display: flex;
     margin-left: auto;
     color: #0088a9;
-    align-items: left;
+    align-items: center;
     justify-content: flex-end;
     font-size: 16px;
     padding: 30px 10%;
@@ -46,6 +49,9 @@ h2 {
 /* Nav__links class list-style none */
 .nav__links {
     list-style: none;
+    text-transform: uppercase;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
 }
 
 .nav__links li {
@@ -55,10 +61,11 @@ h2 {
 
 .nav__links li a {
     transition: all 0.3s ease 0s;
+    text-decoration: none;
 }
 
 .nav__links li a:hover {
-    color: #0088a9;
+    color: #000000;
 }
 
 /* Added media queries */

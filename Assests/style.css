@@ -1,3 +1,4 @@
+/* Applied styling to everything */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -5,7 +6,8 @@
     background-color: #24252a;
 }
 
-li, a, button {
+/* Applied stying to all li items and anchored items*/
+li, a {
     font-family: sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -18,10 +20,12 @@ h1 {
     margin-right: auto;
 }
 
+/* Applied psuedo class of hover */
 h1:hover {
     color: #0088a9;
 }
 
+/* Dispaly flex, and justified content to flex-end */
 header {
     display: flex;
     justify-content:flex-end ;
@@ -39,6 +43,7 @@ h2 {
     padding: 30px 10%;
 }
 
+/* Nav__links class list-style none */
 .nav__links {
     list-style: none;
 }
@@ -56,6 +61,7 @@ h2 {
     color: #0088a9;
 }
 
+/* Added media queries */
 @media screen and (max-width: 992px) {
     .card {
       width: 50%;

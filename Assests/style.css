@@ -2,29 +2,66 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #24252A;
+    background-color: #24252a;
 }
 
-li, a, section, ul {
-    font-family:sans-serif ;
+li, a, button {
+    font-family: sans-serif;
     font-weight: 500;
     font-size: 16px;
     color: #edf0f1;
     text-decoration: none;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 40%;
+h1 {
+    color: #edf0f1;
+    margin-right: auto;
 }
 
-.nav-list {
+h1:hover {
+    color: #0088a9;
+}
+
+header {
+    display: flex;
+    justify-content:flex-end ;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+h2 {
+    display: flex;
+    margin-left: auto;
+    color: #0088a9;
+    align-items: left;
+    justify-content: flex-end;
+    font-size: 16px;
+    padding: 30px 10%;
+}
+
+.nav__links {
     list-style: none;
 }
 
-.nav-items {
+.nav__links li {
     display: inline-block;
     padding: 0px 20px;
+}
+
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+    color: #0088a9;
+}
+
+@media screen and (max-width: 992px) {
+    .card {
+      width: 50%;
+}
+  
+@media screen and (max-width: 768px) {
+    .card {
+      width: 100%;
 }

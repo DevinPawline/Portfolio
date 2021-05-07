@@ -46,6 +46,26 @@ h2 {
     padding: 30px 10%;
 }
 
+/* About__Me class margin-left auto  */
+.about__me {
+    align-items: center;
+}
+
+/* About__Section display flex, changed font color, font size, transformed text to uppercase and added a solid bottom border  */
+.about__section {
+    display: flex;
+    color:#0088a9 ;
+    font-size: 25px;
+    text-transform: uppercase;
+    border-bottom: 2px solid black;
+}
+
+/* About__Content display flex, and changed color of text */
+.about__content {
+    display: flex;
+    color: #edf0f1;
+}
+
 /* Nav__links class list-style none */
 .nav__links {
     list-style: none;
@@ -54,6 +74,7 @@ h2 {
     transition: border-bottom 0.5s;
 }
 
+/* Nav__Links list items display inline-block, and added padding */
 .nav__links li {
     display: inline-block;
     padding: 0px 20px;
@@ -64,6 +85,7 @@ h2 {
     text-decoration: none;
 }
 
+/* Nav__Links hover psuedo effect */
 .nav__links li a:hover {
     color: #000000;
 }

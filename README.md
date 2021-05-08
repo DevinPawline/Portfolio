@@ -1,3 +1,6 @@
+
+
+
 # Portfolio
 Below is the depoyable link for my portfolio as well as a screen recording of its functionality
 
@@ -23,5 +26,6 @@ THEN I am presented with a responsive layout that adapts to my viewport
 # Link to Deployable Application
 https://devinpawline.github.io/Portfolio/
 # Screen recording of functionality 
+https://user-images.githubusercontent.com/79121046/117554064-4d2beb80-b023-11eb-91cf-230f73612d7f.MP4
 
 

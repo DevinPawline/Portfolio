@@ -13,6 +13,9 @@ body {
     color: #0088a9;
     line-height: 1.5;
 }
+nav {
+    background-color:#0088a9 ;
+}
 /* Applied styling to all h tags */
 h1,
 h2,
@@ -83,6 +86,11 @@ h2 {
 }
 /* Subtitle class styling  */
 .subtitle {
+    /* Added photo of me and my dogs, the only way I could get it to fit was contain/making it repeat */
+    background-image: url("../Assests/Images/Devin.jpeg");
+    background-size:contain;
+    background-position:center;
+    background-blend-mode: soft-light;
     min-height: 30vh;
     display: flex;
     justify-content: flex-end;
@@ -90,17 +98,14 @@ h2 {
     text-align: right;
     padding: 2% 6%;
 }
-
-.subtitle div {
-    flex: 0 0 90%;
-}
-
+/* Subtitle H2 styling */
 .subtitle h2 {
     margin: 0;
     padding: 5px 10px;
     font-size: 2.3rem;
     line-height: 1.2;
     display: inline;
+
 }
 /* Wrapper class styling */
 .wrapper {
@@ -194,7 +199,7 @@ h2 {
 }
 
 /* Media queries, adjustments to specific elemtns that needed it  */
-@media screen and {max-width: 980px){
+@media screen and (max-width: 980px){
     header {
         padding: 0 0 10px 0;
         justify-content: center;
@@ -224,9 +229,9 @@ h2 {
         padding-bottom: 10px;
         text-align: left;
         font-size: 7vw;
-    }
+    } 
 
-    @media screen and (max-width: 768px) {
+ @media screen and (max-width: 768px) {
         .refactor-code,
         .refactor-code:first-child{
             flex-basis: 100%;
@@ -244,5 +249,7 @@ h2 {
         .contact address {
             flex-direction: column;
             align-items: flex-start;
-        }
-    } 
+        } 
+    }
+
+}

@@ -5,6 +5,36 @@
     padding: 0;
     background-color: #24252a;
 }
+/* Applied styling to everything in body */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #0088a9;
+    line-height: 1.5;
+}
+/* Applied styling to all h tags */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+/* Applied styling to all p tags */
+p {
+    margin: 0
+}
+/* Styling for header tag */
+header {
+    padding: 15px 6% 15px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
 
 /* Applied stying to all li items and anchored items*/
 li, a {
@@ -15,27 +45,33 @@ li, a {
     text-decoration: none;
     background-color: #0088a9;
 }
-
+/* Additonal styling for h1 tag */
 h1 {
     color: #edf0f1;
     margin-right: auto;
     background-color: #0088a9;
 }
-
-/* Applied psuedo class of hover */
-h1:hover {
-    color: #000000;
-}
-
 /* Dispaly flex, and justified content to flex-end */
-header {
+.nav {
     display: flex;
-    justify-content:flex-end ;
-    align-items: center;
-    padding: 30px 10%;
-    background-color:#0088a9 ;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    background-color: #0088a9;  
 }
-
+/* Styling to all nav */
+nav a {
+    text-decoration: none;
+    padding: 5px 10px;
+    margin-right: 10px;
+    background-size: 100% 0.2em;
+    transition: all 0.25s ease-in;
+    font-size: 1.4rem;
+}
+/* Nav all hover pseduo effect */
+nav a:hover{
+    color: darkblue
+}
+/* Additonal H2 styling */
 h2 {
     display: flex;
     margin-left: auto;
@@ -45,58 +81,168 @@ h2 {
     font-size: 16px;
     padding: 30px 10%;
 }
-
-/* About__Me class margin-left auto  */
-.about__me {
-    align-items: center;
-}
-
-/* About__Section display flex, changed font color, font size, transformed text to uppercase and added a solid bottom border  */
-.about__section {
+/* Subtitle class styling  */
+.subtitle {
+    min-height: 30vh;
     display: flex;
-    color:#0088a9 ;
-    font-size: 25px;
-    text-transform: uppercase;
-    border-bottom: 2px solid black;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: right;
+    padding: 2% 6%;
 }
 
-/* About__Content display flex, and changed color of text */
-.about__content {
+.subtitle div {
+    flex: 0 0 90%;
+}
+
+.subtitle h2 {
+    margin: 0;
+    padding: 5px 10px;
+    font-size: 2.3rem;
+    line-height: 1.2;
+    display: inline;
+}
+/* Wrapper class styling */
+.wrapper {
+    max-width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* About__me display flex, changed font color, font size, transformed text to uppercase and added a solid bottom border  */
+.page-section {
+    margin: 25px 0;
+    padding: 10px 0;
     display: flex;
-    color: #edf0f1;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+}
+/* Additonal styling to all h tags in the page-section class */
+.page-section > h3, h4, h5 {
+    flex: 0 0 20%;
+    text-align: right;
+    padding-right: 15px;
+    border-right: 3px solid black;
+    font-size: 4vw;
+    line-height: 1.1;
 }
 
-/* Nav__links class list-style none */
-.nav__links {
-    list-style: none;
-    text-transform: uppercase;
-    border-bottom: 1px solid transparent;
-    transition: border-bottom 0.5s;
+.page-section > div {
+    flex: 0 0 77%;
 }
 
-/* Nav__Links list items display inline-block, and added padding */
-.nav__links li {
-    display: inline-block;
-    padding: 0px 20px;
+.page-section p {
+    margin-bottom: 20px;
 }
-
-.nav__links li a {
-    transition: all 0.3s ease 0s;
+/* Styling in container class */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/* Styling in refactor-code class */
+.refactor-code {
+    border: 4px solid black;
+    min-height: 150px;
+    max-height: 150px;
+    display: flex;
+    align-items: flex-end;
+    padding: 0 0 20px 0;
+    margin: 0.5em;
     text-decoration: none;
+    transition: all 0.5s;
+    font-size: 0.9rem;
+}
+/* Styling to first child of refactor code class */
+.refactor-code:first-child{
+    min-height: 400px;
+    flex-basis: 100%;
 }
 
-/* Nav__Links hover psuedo effect */
-.nav__links li a:hover {
-    color: #000000;
+.refactor-code:hover {
+    background: darkblue;
+}
+/* Contact Me section styling */
+.contact address {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
 }
 
-/* Added media queries */
-@media screen and (max-width: 992px) {
-    .card {
-      width: 50%;
+.contact address a {
+    padding: 5px;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-style: normal;
+    transition: all 0.25s ease-in;
+    margin: 0 0.2rem 0.1rem;
+    display: inline-block;
+    background-color: #24252a;
 }
-  
-@media screen and (max-width: 768px) {
-    .card {
-      width: 100%;
+
+.contact address a:hover {
+    color: darkblue
 }
+
+.refactor-code {
+    background-image:url("../Assests/Images/Refactor\ Code.png") ;
+}
+
+/* Media queries, adjustments to specific elemtns that needed it  */
+@media screen and {max-width: 980px){
+    header {
+        padding: 0 0 10px 0;
+        justify-content: center;
+        text-align: center; 
+    }
+
+    header h1 {
+        width: 100%;
+        padding: 5%;
+        margin-bottom: 10px;
+        font-size: 10vw;
+    }
+
+    header nav {
+        justify-content: center;
+    }
+
+    .page-section > h2,
+    .page-section > div {
+        flex: 0 0 100%;
+    }
+
+    .page-section > h2, h3, h5 {
+        border-right: none;
+        border-bottom: 4px solid black;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+        text-align: left;
+        font-size: 7vw;
+    }
+
+    @media screen and (max-width: 768px) {
+        .refactor-code,
+        .refactor-code:first-child{
+            flex-basis: 100%;
+        }
+
+        .refactor-code:first-child {
+            min-height: 150px;
+        }
+
+        .subtitle {
+            justify-content: center;
+            text-align: center;
+        }
+
+        .contact address {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    } 

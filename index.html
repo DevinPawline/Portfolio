@@ -5,51 +5,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <!-- Linked reset and style css sheets -->
+    <!-- Linked style css sheet -->
     <link rel="stylesheet" href="./Assests/style.css">
 
 </head>
 
 <body>
     <!-- Added Header -->
-    <header>
-        <h1>DEVIN PAWLINE'S PORTFOLIO</h1>
+    <header class="nav">
+        <h1>Devin Pawline</h1>
         <!-- Added Nav -->
         <nav>
-            <!-- Added UL and defined class as nav__links -->
-            <ul class="nav__links">
-                <!-- Linked to sections -->
-                <li><a href="#about__me">About Me</a></li>
-                <li><a href="#">My Work</a></li>
-                <li><a href="#">Resume</a></li>
-                <li><a href="#">Contact Info</a></li>
-            </ul>
+              <a href="#about">About Me</a>
+              <a href="#work">My Work</a>
+              <a href="#contact">Contact Me</a>
         </nav>
     </header>
-    <!-- Added subtitle -->
-     <h2>
-         Use the navigation tabs above to easily move around the website :)
-    </h2> 
+    <section class="subtitle">
+        <div>
+            <h2>Computer Coding</h2>
+        </div>
+    </section>
     <!-- Section Id for styling -->
-    <section id="about__me">
-        <!-- H3 Class for additional styling -->
-        <h3 class="about__section">About Me</h3>
-        <!-- Added Paragraph tag for About Me section and temporary text -->
-        <p class="about__content"> Lorem ipsum dolor sit amet, te accusata instructior per, insolens complectitur at vim. Has ei eirmod verear definitionem, at qui sint augue doctus, modus erant ut eum. Labore alienum efficiantur eos ea, sit tale vidit et, ea eam eius nemore oblique. Et albucius scaevola intellegam quo. At modus o
-            An debitis democritum adversarium nec, liber veritus qui ne. Vis ferri disputationi te. Malorum reformidans ex eum, ei noluisse inciderint nam. No intellegat forensibus pri, sed inermis perpetua abhorreant an, nisl ancillae ius ex. Nisl soluta ius in.
-            
-            Etiam affert malorum ut eam, ut duo novum utamur explicari. No ius viderer albucius, vis putent consulatu accommodare ut. Sit at minimum oportere, ea sed detraxit sadipscing. Noluisse recteque consulatu id pri, ei mei docendi urbanitas scribentur, his suas habemus fierent cu. Mutat choro audiam mei ad, sea in zril integre complectitur. Eam ceteros scribentur at, in admodum percipit laboramus pro.
-            
-            Ea noster dolores qui, aeque complectitur ut vim, et epicuri invidunt sed. Enim pertinacia ne duo, et fuisset luptatum qualisque his. Ad per adhuc posse soluta. Assum cetero interpretaris ut per, epicuri similique per ne, consul invidunt per ut. Eos id mazim gubergren, munere accusam epicurei ei sed. Nec commune detracto albucius ea, ei vel primis legimus alienum, usu augue molestie tincidunt et.
-            
-            Sed in nisl delenit, fastidii facilisi pericula his in, vis an autem legere. Pri appetere dissentiunt intellegebat no. Ea vel omnis efficiendi, cu illum animal has, duo ea libris appetere consequuntur. Omnis platonem assentior sed an, ei mundi impedit deserunt est. Sea esse graeco scriptorem at, eam clita delenit eu. Vix veritus evertitur posidonium ut, quo et oblique mandamus, meis suscipit verterem te usu. </p>
-    </section>
+    <!-- Main class defined as wrapper for styling -->
+    <main class="wrapper">
+        <!-- Section class with id about for link -->
+        <section class="page-section" id="about">
+            <h3>About Me</h3>
+            <div>
+        <!-- Added Paragraph tag for About Me section and temporary text  -->
+                <p>Hello,  
+                    <br> My name is Devin Pawline, and I am currently in full stack bootcamp for coding! 
+                </p>
+            </div>
+        </section>
+        <!-- Section class page section id work for link -->
+        <section class="page-section" id="work">
+            <h4>My Work</h4>
+            <div class="container">
 
-    <section id="my__work">
-        <h3 class ="work__section">My Work</h3>
-
-    </section>
-
-    
+                <a href="#" class="refactor-code">
+                    <div>
+                    <h4>Refactor Code</h4>
+                    <span>Refacorting Code</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <!-- Section class with id contact for link -->
+        <section class="page-section contact" id="contact">
+            <h5>Contact Me</h5>
+            <div>
+                <!-- Links for telephone, email, and github -->
+                <address>
+                    <a href="tel:+17046092044">704.609.2044</a>
+                    <a href="mailto:devinpawline@outlook.com">devinpawline@outlook.com</a>
+                    <a href="https://github.com/DevinPawline">Github</a>
+                </address>
+            </div>
+        </section>
+    </main>   
 </body>
 </html>
